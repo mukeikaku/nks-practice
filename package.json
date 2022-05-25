@@ -8,8 +8,6 @@
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "dev": "npm run watch",
     "prod": "npm run production",
-    "prepare": "if [ ! -e .git ]; then git init; fi && npx husky init && npx husky install",
-    "test": "lint-staged -c .lintstagedrc.js && if [ -n \"$(git diff --cached --name-only --diff-filter=DR -- .env-sample)\"  ]; then echo 'Error : Do not rename or remove .env-sample, it should be copy to .env'; exit 1; fi"
   },
   "keywords": [],
   "author": "LIG inc",
