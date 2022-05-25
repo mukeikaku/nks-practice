@@ -1,0 +1,6 @@
+node_modules
+npm-debug.log
+.env
+public
+.DS_Store
+resources/assets/images/**/*.webp
